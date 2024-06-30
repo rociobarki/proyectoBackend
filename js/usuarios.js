@@ -11,8 +11,8 @@ createApp({
             cargando: true,
             /*alta*/
             id: 0,
-            usuario: "admin",
-            clave: "admin",
+            usuario: "",
+            clave: "",
         }
     },
     methods: {

@@ -12,7 +12,7 @@ document.getElementById("header").innerHTML = ` <nav class="navbar navbar-expand
             </li>
         
             <li class="nav-item dropdown" id="crud"   >
-                <a class="nav-link dropdown-toggle" href="#" id="dropdownId"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administracion</a>
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">CRUD</a>
                 <div class="dropdown-menu" aria-labelledby="dropdownId" >
                     <a class="dropdown-item" href="alumnos.html">Alumnos</a>
                     <a class="dropdown-item" href="eventos.html">Eventos</a>
@@ -25,6 +25,11 @@ document.getElementById("header").innerHTML = ` <nav class="navbar navbar-expand
                 <a class="nav-link" href="login.html">Login</a>
             </li>
         </ul>
+        <button type="button" class="btn btn-default btn-sm">
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+        </button>
+
+        </div>
     </div>
 </div>
 </nav>
@@ -34,3 +39,4 @@ if (sessionStorage.getItem("adm") != "1") {
 } else {
     document.querySelector("#crud").setAttribute('style', 'display:on')
 }
+
