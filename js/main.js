@@ -18,6 +18,12 @@ document.getElementById("header").innerHTML = ` <nav class="navbar navbar-expand
                     <a class="dropdown-item" href="eventos.html">Eventos</a>
                 </div>
             </li>
+            <li class="nav-item dropdown" id="options"   >
+                <a class="nav-link dropdown-toggle" href="#" id="dropdownId"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OPCIONES</a>
+                <div class="dropdown-menu" aria-labelledby="dropdownId" >
+                    <a class="dropdown-item" href="alumno_nuevo.html">Ingresa tus datos</a> 
+                </div>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="registro.html">Registro</a>
             </li>
@@ -34,9 +40,19 @@ document.getElementById("header").innerHTML = ` <nav class="navbar navbar-expand
 </div>
 </nav>
 `
-if (sessionStorage.getItem("adm") != "1") {
+if (sessionStorage.getItem("adm") == "1") {
+    document.querySelector("#crud").setAttribute('style', 'display:on')
+    document.querySelector("#options").setAttribute('style', 'display:none')
+} else if (sessionStorage.getItem("adm") == "0") {
+    document.querySelector("#options").setAttribute('style', 'display:on')
     document.querySelector("#crud").setAttribute('style', 'display:none')
 } else {
-    document.querySelector("#crud").setAttribute('style', 'display:on')
+    document.querySelector("#crud").setAttribute('style', 'display:none')
+    document.querySelector("#options").setAttribute('style', 'display:none')
 }
+// if (sessionStorage.getItem("adm") != "1") {
+//     document.querySelector("#crud").setAttribute('style', 'display:none')
+// } else {
+//     document.querySelector("#crud").setAttribute('style', 'display:on')
+// }
 

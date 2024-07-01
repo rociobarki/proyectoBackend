@@ -101,13 +101,6 @@ createApp({
                     }
                     window.location.href = "./index.html";
                     // window.location.href = "./alumno_nuevo.html";
-                } else if (this.usuarios[i].clave == this.clave) {
-                    if (this.usuarios[i].rol == 0) {
-                        sessionStorage.setItem("adm", 0)
-
-                    }
-                    // window.location.href = "./index.html";
-                    window.location.href = "./alumno_nuevo.html";
                 } else {
                     alert('Clave erronea')
                 }

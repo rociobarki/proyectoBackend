@@ -2,7 +2,7 @@ const { createApp } = Vue
 createApp({
     data() {
         return {
-            alumnos: [],
+            eventos: [],
             url: 'https://martinrodriguezdicarlo.pythonanywhere.com/eventos',
             // url: 'http://127.0.0.1:5000/eventos',
             // si el backend esta corriendo local  usar localhost 5000(si no lo subieron a pythonanywhere)
