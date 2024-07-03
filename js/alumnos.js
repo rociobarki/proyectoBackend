@@ -14,6 +14,7 @@ createApp({
             nombre: "",
             apellido: "",
             edad: 0,
+            telefono: "",
             instrumento: "",
         }
     },
@@ -47,6 +48,7 @@ createApp({
                 nombre: this.nombre,
                 apellido: this.apellido,
                 edad: this.edad,
+                telefono: this.telefono,
                 instrumento: this.instrumento
             }
             var options = {

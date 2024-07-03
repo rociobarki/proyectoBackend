@@ -9,6 +9,7 @@ createApp({
             nombre: "",
             apellido: "",
             edad: 0,
+            telefono: "",
             instrumento: "",
             url: 'https://martinrodriguezdicarlo.pythonanywhere.com/alumnos/' + id,
         }
@@ -20,10 +21,11 @@ createApp({
                 .then(data => {
                     console.log(data)
                     this.id = data.id,
-                    this.nombre = data.nombre,
-                    this.apellido = data.apellido,
-                    this.edad = data.edad,
-                    this.instrumento = data.instrumento
+                        this.nombre = data.nombre,
+                        this.apellido = data.apellido,
+                        this.edad = data.edad,
+                        this.telefono = data.telefono,
+                        this.instrumento = data.instrumento
                 })
                 .catch(err => {
                     console.error(err);
@@ -35,6 +37,7 @@ createApp({
                 nombre: this.nombre,
                 apellido: this.apellido,
                 edad: this.edad,
+                telefono: this.telefono,
                 instrumento: this.instrumento
             }
             var options = {
