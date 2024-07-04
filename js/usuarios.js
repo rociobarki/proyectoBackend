@@ -30,9 +30,8 @@ createApp({
                     this.error = true
                 })
         },
-        /*
         eliminar(id) {
-            const url = 'https://mcerda.pythonanywhere.com/usuarioss/' + id;
+            const url = 'https://martinrodriguezdicarlo.pythonanywhere.com/usuarios/' + id;
             var options = {
                 method: 'DELETE',
             }
@@ -41,7 +40,7 @@ createApp({
                 .then(res => {
                     location.reload();
                 })
-        },*/
+        },
         grabar() {
             let usuario = {
                 usuario: this.usuario,

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Editar Evento</title>
+    <title>Editar Usuario</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS v5.2.1 -->
@@ -17,33 +17,24 @@
     <main>
         <div class="container" id="app">
             <form style="background-color: aliceblue;margin:10px auto ; width: 400px; padding: 20px;">
-                <h2>Editar evento </h2>
+                <h2>Editar Usuario </h2>
                 <!-- <p>Precio:{{precio}}</p> -->
                 <div class="mb-3">
                     <label for="id">Id</label>
                     <input type="number" name="id" id="id" disabled v-model="id">
                 </div>
                 <div class="mb-3">
-                    <label for="fecha">Fecha</label>&nbsp
-                    <input type="text" name="fecha" id="fecha" v-model="fecha">
+                    <label for="usuario">Usuario</label>&#160
+                    <input type="text" name="usuario" id="usuario" v-model="usuario">
                 </div>
                 <div class="mb-3">
-                    <label for="lugar">Lugar</label>&nbsp
-                    <input type="text" name="lugar" id="lugar" v-model="lugar">
+                    <label for="clave">Clave</label>&#160
+                    <input type="text" name="clave" id="clave" v-model="clave">
                 </div>
                 <div class="mb-3">
-                    <label for="descripcion">Descripcion</label>&nbsp
-                    <input type="text" name="descripcion" id="descripcion" v-model="descripcion">
+                    <label for="rol">Rol</label>&#160
+                    <input type="number" name="rol" id="rol" v-model="rol">
                 </div>
-                <div class="mb-3">
-                    <label for="ubicacion">Ubicacion</label>&nbsp
-                    <input type="text" name="ubicacion" id="ubicacion" v-model="ubicacion">
-                </div>
-                <!-- <div class="mb-3">
-                    <label for="imagen">Imagen</label>
-                    <input type="text" name="imagen" id="imagen" v-model="imagen">
-                    <img width="100" :src="imagen" alt="">
-                </div> -->
                 <button type="button" class="btn btn-success" v-on:click="modificar()">Grabar</button>
             </form>
         </div>
@@ -60,8 +51,8 @@
         crossorigin="anonymous"> </script>
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script src="./js/evento_editar.js"></script>
-    <script src="./js/eventos.js"></script>
+    <script src="./js/usuario_editar.js"></script>
+    <script src="./js/usuarios.js"></script>
 </body>
 
 </html>
