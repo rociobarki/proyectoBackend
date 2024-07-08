@@ -12,10 +12,10 @@ const logout = () => {
     window.location.href = './index.html'
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const logoutButton = document.querySelector('#logoutButton')
-    logoutButton.addEventListener('click', logout)
-})
+// document.addEventListener('DOMContentLoaded', () => {
+//     const logoutButton = document.querySelector('#logoutButton')
+//     // logoutButton.addEventListener('click', logout)
+// })
 
 
 

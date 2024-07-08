@@ -32,7 +32,7 @@ document.getElementById("header").innerHTML = ` <nav class="navbar navbar-expand
                 <a class="nav-link" href="login.html">Login</a>
             </li>
         </ul>
-        <button type="button" class="btn btn-default btn-sm">
+        <button onclick="logout()" type="button" class="btn btn-default btn-sm">
         <span class="glyphicon glyphicon-log-out"></span> Log out
         </button>
 
